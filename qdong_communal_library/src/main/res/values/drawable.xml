@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <item name="list_item_normal_bg" type="drawable">#ffffff</item>
+    <item name="list_item_normal_bg_gray" type="drawable" >#f5f5f5</item>
+    <item name="list_item_pressed_bg" type="drawable">#ebebeb</item>
+    <!-- 半透明 -->
+    <item name="my_pressed_bg" type="drawable">#e0000000</item>
+    
+    <!-- 我的关注：关注技师列表弹出框上按钮上字体所用的颜色 -->
+    <item name="common_dialog_text_color_normal" type="drawable">#666666</item>
+    <item name="common_dialog_text_color_pressed" type="drawable">#cf4a4a</item>
+    
+    <item name="common_title_bar_right_pressed" type="drawable" >#70000000</item>
+    <item name="common_title_bar_right_normal" type="drawable">@android:color/transparent</item>
+    
+</resources>

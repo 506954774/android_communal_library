@@ -1,0 +1,23 @@
+<resources>
+
+    <!--刷新控件的footer-->
+    <string name="app_name">library</string>
+    <string name="loading">正在加载…</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="complete">刷新完成</string>
+
+    <!-- loadingView-->
+    <string name="is_loading">加载中...</string>
+    <string name="loading_title">正在玩命为您加载...</string>
+    <string name="check_network">连接网络失败!请先设置网络,然后</string>
+    <string name="no_content_hint">暂无内容</string>
+    <string name="reload"><u>重新加载</u></string>
+    <string name="order_list_network_error">当前网络不可用，请检查你的网络设置</string>
+
+    <!--mainActivity-->
+    <string name="cancel">注销</string>
+
+    <!--引导页-->
+    <string name="start_use">开始体验</string>
+
+</resources>

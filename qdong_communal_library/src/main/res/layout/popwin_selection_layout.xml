@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/ll_top"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/popBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/pop_top_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:maxLength="4"
+                android:singleLine="true"
+                 />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/pop_top_text1"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/pop_selection_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/divider_line" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/popBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/popBtn"
+            android:layout_weight="1"
+             >
+
+            <TextView
+                android:id="@+id/pop_top_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color" />
+
+            <ImageView
+                android:layout_marginLeft="2dp"
+                android:id="@+id/pop_top_img2"
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_toRightOf="@+id/pop_top_text2"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="3dp"
+
+                android:src="@mipmap/pop_selection_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/pop_top_dvider"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/divider_line" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/popBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/popBtn2"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/pop_top_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color" />
+
+            <ImageView
+                android:id="@+id/pop_top_img3"
+                android:layout_marginLeft="2dp"
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_toRightOf="@+id/pop_top_text3"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/pop_selection_bg" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_bottom"
+        android:layout_below="@id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider_line" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_canvers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_bottom"
+        android:alpha="0.7"
+        android:background="#000000"
+        android:focusable="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

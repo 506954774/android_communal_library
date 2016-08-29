@@ -1,0 +1,10 @@
+<resources>
+
+    <!--广告轮播控件-->
+    <dimen name="commen_With_Height7_5">7.5dp</dimen>
+    <dimen name="pop_top_listview_item_height">200dp</dimen>
+
+    <!-- 引导页圆点的大小 -->
+    <dimen name="guide_point_bulk">10dp</dimen>
+
+</resources>
