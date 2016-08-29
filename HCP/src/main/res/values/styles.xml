@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="default_titleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/default_topBarHeight</item>
+        <item name="android:textColor">@color/default_titleTextColor</item>
+        <item name="android:textSize">@dimen/default_titleSize</item>
+        <item name="android:background">@color/default_titleBgColor</item>
+    </style>
+
+    <style name="default_textStyle">
+        <item name="android:textSize">@dimen/default_textSize</item>
+        <item name="android:textColor">@color/default_textColor</item>
+    </style>
+
+    <style name="default_trumpetTextStyle">
+        <item name="android:textSize">@dimen/default_trumpetTextSize</item>
+        <item name="android:textColor">@color/default_textColor</item>
+    </style>
+    <!-- 圆形头像背景 -->
+    <style name="circleIconBg">
+        <item name="border_color">@android:color/white</item>
+        <item name="border_width">4dp</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@mipmap/rating_bar_bg</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+
+
+    <style name="item_text_title">
+        <item name="android:textColor">@color/text_color_title</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="item_text">
+        <item name="android:textColor">@color/text_color_normal</item>
+        <item name="android:textSize">@dimen/text_size11</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

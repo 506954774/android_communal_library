@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:background="@color/default_titleBgColor">
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/icon_location"
+       android:text="@string/fragment_location"
+       android:textColor="#ffffffff"
+        />
+
+
+
+
+    <EditText
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_location"
+        android:layout_toLeftOf="@+id/iv_msg"
+        android:id="@+id/et_search"
+        android:textSize="13sp"
+        android:hint="@string/fragment_search_hint"
+        android:background="@drawable/icon_search_bg"
+        android:drawableLeft="@mipmap/icon_search"
+        android:paddingLeft="5dp"
+        android:drawablePadding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"/>
+
+    <ImageView
+        android:id="@+id/iv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_msg"/>
+
+</RelativeLayout>

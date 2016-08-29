@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">能工巧匠</string>
+
+    <!--主页-->
+    <string name="fragment_home">首页</string>
+    <string name="fragment_job_manager">工作管理</string>
+    <string name="fragment_contacts">联系人</string>
+    <string name="fragment_mine">我的</string>
+    <string name="fragment_setting">设置</string>
+    <string name="check">查看</string>
+
+    <!--FragmentHome-->
+    <string name="fragment_location">定位</string>
+    <string name="fragment_search_hint">请输入您要搜索的工作或工种</string>
+    <string name="job_recomend">劳务推荐</string>
+
+    <string name="recruiting_management">招聘管理</string>
+    <string name="bid_management">竞标管理</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="find_build_resourse">找建材</string>
+    <string name="assist_disability">爱心助残</string>
+    <string name="industry_infomation">行业资讯</string>
+    <string name="education">教育培训</string>
+    <string name="law_service">法律服务</string>
+    <string name="hometown">乡村家园</string>
+    <string name="all">全部</string>
+    <!-- 工作管理 -->
+    <string name="workManager">工作管理</string>
+    <string name="teamManager">团队管理</string>
+    <string name="employeeManager">人员结构</string>
+    <!-- 创建新项目 -->
+    <string name="createNewProject">创建项目</string>
+    <string name="newPorjectName">项目名称：</string>
+    <string name="newPorjectUrlAddress">链接地址：</string>
+    <string name="newProjectAddress">项目地址：</string>
+    <string name="newPorjectIntroduce">项目简介：</string>
+    <string name="newPorjectContractor">承建单位：</string>
+    <string name="newPorjectProjectManager">项目经理：</string>
+    <string name="newPorjectSAndETime">起止时间：</string>
+    <string name="newPorjectServiceCompany">劳务公司：</string>
+    <!-- 联系人 -->
+    <string name="contacts">联系人</string>
+    <string name="addNewFriend">添加好友</string>
+    <string name="message">消息</string>
+    <string name="company">公司</string>
+    <string name="ProjectManager">项目经理</string>
+    <string name="worker">劳动人员</string>
+    <!--团队管理-->
+    <string name="TeamManager">团队管理</string>
+    <string name="createNewManager">创建项目经理</string>
+    <string name="projectName">项目名称：</string>
+    <string name="createNewAccount">用户名:</string>
+    <string name="createNewPassword">密码:</string>
+    <string name="createNewName">姓名:</string>
+    <string name="createNewPhone">电话:</string>
+    <string name="createNow">立即创建</string>
+    <!-- 默认 -->
+    <string name="change">修改</string>
+    <string name="edit">编辑</string>
+    <string name="default_commit">提交</string>
+    <string name="passwrod">密码</string>
+    <string name="phone">电话</string>
+
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 所有ListView点击item的背景效果 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:drawable="@drawable/list_item_normal_bg" />
+    <item android:state_pressed="true" android:drawable="@drawable/list_item_pressed_bg" />
+    <item android:state_focused="true" android:drawable="@drawable/list_item_pressed_bg" />
+    <item android:drawable="@drawable/list_item_normal_bg" />
+</selector>

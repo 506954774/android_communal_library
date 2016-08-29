@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    
+     >
+
+    <!--loading 层-->
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <!--
+        <ImageView
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:id="@+id/loadingIv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_loading_img_width"
+            android:src="@drawable/common_progressbar_loading" />
+			
+			某些机型不支持ImageView的动画效果
+        -->
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/dialogRoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                         >
+
+            <include
+                layout="@layout/loading_progressbar"
+                ></include>
+
+          <!--  <ProgressBar
+                android:id="@+id/dialogMainIcon"
+                style="@style/qZonePublishProgressStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:indeterminateDrawable="@drawable/sc_publish_spinner" />
+
+            <TextView
+                android:id="@+id/loadingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dialogMainIcon"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="@string/is_loading"
+                android:textColor="#FF888888"
+                android:textSize="14dp" />-->
+
+        </RelativeLayout>
+
+       <!-- <ProgressBar
+            android:id="@+id/loadingIv"
+            style="@style/qZonePublishProgressStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:indeterminateDrawable="@drawable/sc_publish_spinner"  />
+
+        <TextView
+            android:id="@+id/loadingTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/is_loading"
+            android:textColor="@color/list_explain_color"
+            android:textSize="@dimen/list_content_text_size" />-->
+    </LinearLayout>
+
+    <!--无内容层-->
+    <LinearLayout
+        android:id="@+id/ll_nocontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/common_mask_no_content_layout"
+            />
+
+    </LinearLayout>
+
+
+    <!--错误提示层-->
+    <LinearLayout
+        android:id="@+id/ll_error"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/common_mask_no_network_layout"
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>

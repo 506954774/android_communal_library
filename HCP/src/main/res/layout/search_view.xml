@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_down"
+            android:background="#ffdddddd"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/arrow2_down"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"></ImageView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+       <EditText
+           android:layout_centerHorizontal="true"
+           android:layout_width="200dp"
+           android:drawableLeft="@android:drawable/ic_menu_search"
+           android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"></ListView>
+    </RelativeLayout>
+
+</LinearLayout>

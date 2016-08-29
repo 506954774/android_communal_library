@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/commen_With_Height15">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item_team_tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newPorjectProjectManager"
+                android:textColor="@color/default_textColor"
+                android:textSize="@dimen/commen_textSize16"
+                />
+
+            <TextView
+                android:id="@+id/item_team_manager_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/item_team_tv_1"
+                android:text="李云兵"
+                android:textColor="@color/default_textColor"
+                android:textSize="@dimen/default_textSize"
+                />
+
+            <TextView
+                android:id="@+id/item_team_tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_team_tv_1"
+                android:layout_marginTop="@dimen/commen_With_Height10"
+                android:text="电话："
+                android:textColor="@color/default_textColor"
+                android:textSize="@dimen/commen_textSize14"
+                />
+
+            <TextView
+                android:id="@+id/item_team_manager_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_team_tv_1"
+                android:layout_marginTop="@dimen/commen_With_Height12"
+                android:layout_toRightOf="@id/item_team_tv_2"
+                android:text="18632123336"
+                android:textSize="@dimen/commen_textSize12"
+                />
+
+            <TextView
+                android:id="@+id/item_team_tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_team_tv_1"
+                android:layout_marginLeft="@dimen/commen_With_Height10"
+                android:layout_marginTop="@dimen/commen_With_Height10"
+                android:layout_toRightOf="@id/item_team_manager_phone"
+                android:text="密码："
+                android:textColor="@color/default_textColor"
+                android:textSize="@dimen/commen_textSize14"
+                />
+
+            <TextView
+                android:id="@+id/item_team_manager_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_team_tv_1"
+                android:layout_marginTop="@dimen/commen_With_Height12"
+                android:layout_toRightOf="@id/item_team_tv_3"
+                android:text="18632123336"
+                android:textSize="@dimen/commen_textSize12"
+                />
+
+            <TextView
+                android:id="@+id/item_team_tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_team_tv_2"
+                android:layout_marginTop="@dimen/commen_With_Height10"
+                android:text="@string/projectName"
+                android:textColor="@color/default_textColor"
+                android:textSize="@dimen/commen_textSize14"
+                />
+
+            <TextView
+                android:id="@+id/iteam_team_manager_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_team_tv_2"
+                android:layout_marginTop="@dimen/commen_With_Height12"
+                android:layout_toRightOf="@id/item_team_tv_4"
+                android:text="际华3502御园经济适用房项目施工"
+                android:textSize="@dimen/commen_textSize12"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/item_team_manager_edit_ll"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_team_manager_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/commen_With_Height10"
+                android:drawableTop="@mipmap/ic_edit"
+                android:gravity="center"
+                android:text="@string/change"
+                android:textColor="@color/edit_color"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

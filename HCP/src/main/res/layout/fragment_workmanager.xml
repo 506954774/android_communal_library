@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/default_titleStyle"
+            android:gravity="center"
+            android:text="@string/workManager"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/commen_With_Height90"
+            android:layout_marginTop="@dimen/commen_With_Height5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/wrokmanager_team"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="2dp"
+                android:drawableTop="@mipmap/ic_teammanager"
+                android:gravity="center"
+                android:text="@string/teamManager"/>
+
+            <TextView
+                android:id="@+id/wrokmanager_employee"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="2dp"
+                android:drawableTop="@mipmap/ic_employeemanager"
+                android:gravity="center"
+                android:text="@string/employeeManager"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/work_manager_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:layout_marginRight="@dimen/default_padding"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+</layout>

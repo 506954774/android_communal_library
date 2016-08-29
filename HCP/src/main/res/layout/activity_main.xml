@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_main_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_main_upFt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+
+        </FrameLayout>
+
+
+        <com.qdong.hcp.customWidget.CustomBottomBar
+            android:id="@+id/custom_bottom_bar"
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            ></com.qdong.hcp.customWidget.CustomBottomBar>
+    </RelativeLayout>
+
+</layout>

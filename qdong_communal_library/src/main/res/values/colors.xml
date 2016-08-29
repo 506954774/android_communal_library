@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--主题色-->
+    <color name="theme">#ff568edd</color>
+    <!-- 透明背景色#00000000 -->
+    <color name="transparent">@android:color/transparent</color>
+    <color name="black">#000000</color>
+
+    <!--loadingView-->
+    <color name="custom_loading_bg_off">#a0000000</color>
+    <color name="custom_loading_bg_on">#FFFFFF</color>
+    <color name="custom_loading_font_color">#FFFFFF</color>
+    <color name="custom_loading_list_explain_color">#999999</color>
+
+    <!--下拉控件-->
+    <color name="title_text_color">#999999</color>
+
+
+    <!--PagerSlidingTabStrip-->
+    <color name="color_purple_bd6aff">#bd6aff</color>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+    <color name="GreyWhite_has_alpha">#66FAFAFA</color>
+    <!--PagerTab-->
+    <color name="blue_color">#ff568edd</color>
+
+</resources>

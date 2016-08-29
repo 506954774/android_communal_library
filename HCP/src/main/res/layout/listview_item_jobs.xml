@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:cl="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:paddingTop="10dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_centerVertical="true"
+             style="@style/item_text_title"
+             android:text="挖煤啊"
+            />
+
+        <ImageView
+            android:id="@+id/iv_bidding"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150dp"
+            android:src="@mipmap/icon_biding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--评分控件-->
+        <com.qdong.communal.library.widget.StarEvaluateView
+            android:id="@+id/stars_evaluate"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            cl:starsCount="5"
+            cl:linesCount="1"
+            cl:defaultChosen="5"
+            cl:stepSize="0.5"
+            cl:isBig="false"
+            cl:checkable="false"
+            >
+        </com.qdong.communal.library.widget.StarEvaluateView>
+
+        <TextView
+
+            android:layout_marginTop="-1dp"
+            android:id="@+id/tv_star"
+            style="@style/item_text"
+            android:text="5.0分"
+            android:gravity="top"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/stars_evaluate"
+           />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:text="500m"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/icon_location_gray"
+            style="@style/item_text"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:text="行业:挖煤"
+
+            style="@style/item_text"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_time"
+            android:text="起止时间:2016/08/17-2016/09/20"
+
+            style="@style/item_text"/>
+
+        <Button
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="@string/check"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/icon_check"
+            android:textColor="#ffffff"
+
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_devide"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</LinearLayout>

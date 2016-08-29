@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="65dp">
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_module_icon"
+        android:src="@mipmap/icon_my_collection"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+    <TextView
+        android:layout_below="@+id/iv_module_icon"
+        android:id="@+id/tv_module_name"
+        android:text="爱心助残"
+        android:textSize="@dimen/commen_textSize12"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/default_titleBgColor"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/default_titleStyle"
+                    android:gravity="center"
+                    android:text="个人中心" />
+
+
+                <RelativeLayout
+                    android:id="@+id/userMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:clickable="true"
+                    android:onClick="@{click.onClick}">
+
+                    <ImageView
+                        android:id="@+id/heardIconIv"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="50dp"
+                        android:src="@mipmap/ic_my_heard" />
+
+                    <TextView
+                        android:id="@+id/corporateNameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/heardIconIv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/heardIconIv"
+                        android:text="河北韩达有限公司"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_titleSize" />
+
+                    <TextView
+                        android:id="@+id/jobsTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/corporateNameTv"
+                        android:layout_below="@+id/corporateNameTv"
+                        android:layout_marginTop="4dp"
+                        android:text="法定代表人"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_textSize" />
+
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/jobsTv"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@+id/jobsTv"
+                        android:text="梁总"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_trumpetTextSize" />
+
+                    <RatingBar
+                        android:id="@+id/scoreRatingBar"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/jobsTv"
+                        android:layout_below="@+id/jobsTv"
+                        android:layout_marginTop="6dp"
+                        android:numStars="5"
+                        android:rating="5" />
+
+                    <TextView
+                        android:id="@+id/scoreTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/scoreRatingBar"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/scoreRatingBar"
+                        android:text="5.0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_trumpetTextSize" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/default_padding"
+                        android:src="@mipmap/ic_right_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/default_padding">
+
+                <TextView
+                    style="@style/default_trumpetTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="余额" />
+
+                <TextView
+                    android:id="@+id/balanceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="5000"
+                    android:textColor="#FF6600"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/transactionDetailTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawablePadding="@dimen/default_drawablePadding"
+                    android:drawableRight="@mipmap/ic_right_arrow_gray"
+                    android:onClick="@{click.onClick}"
+                    android:text="查看交易明细"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/default_textSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_padding"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/default_padding"
+                android:paddingStart="@dimen/default_padding">
+
+
+                <TextView
+                    android:id="@+id/profileTv"
+                    style="@style/default_textStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_itemHeight"
+                    android:drawableRight="@mipmap/ic_right_arrow_gray"
+                    android:drawablePadding="@dimen/default_drawablePadding"
+                    android:drawableLeft="@mipmap/ic_my_evaluate"
+                    android:gravity="center_vertical"
+                    android:onClick="@{click.onClick}"
+                    android:text="公司简介" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/evaluateTv"
+                    style="@style/default_textStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_itemHeight"
+                    android:drawableRight="@mipmap/ic_right_arrow_gray"
+                    android:drawablePadding="@dimen/default_drawablePadding"
+                    android:drawableLeft="@mipmap/ic_my_evaluate"
+                    android:gravity="center_vertical"
+                    android:onClick="@{click.onClick}"
+                    android:text="评价" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/settingTv"
+                    style="@style/default_textStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_itemHeight"
+                    android:drawableRight="@mipmap/ic_right_arrow_gray"
+                    android:drawablePadding="@dimen/default_drawablePadding"
+                    android:drawableLeft="@mipmap/ic_my_setting"
+                    android:gravity="center_vertical"
+                    android:onClick="@{click.onClick}"
+                    android:text="设置" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/feedbackTv"
+                    style="@style/default_textStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_itemHeight"
+                    android:drawableRight="@mipmap/ic_right_arrow_gray"
+                    android:drawablePadding="@dimen/default_drawablePadding"
+                    android:drawableLeft="@mipmap/ic_my_feedback"
+                    android:gravity="center_vertical"
+                    android:onClick="@{click.onClick}"
+                    android:text="意见反馈" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/callTv"
+                    style="@style/default_textStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_itemHeight"
+                    android:drawableRight="@mipmap/ic_right_arrow_gray"
+                    android:drawablePadding="@dimen/default_drawablePadding"
+                    android:drawableLeft="@mipmap/ic_my_call"
+                    android:gravity="center_vertical"
+                    android:onClick="@{click.onClick}"
+                    android:text="联系我们" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

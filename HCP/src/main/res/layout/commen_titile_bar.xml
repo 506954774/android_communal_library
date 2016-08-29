@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_topBarHeight"
+        android:background="@color/default_titleBgColor">
+
+        <ImageView
+            android:id="@+id/commen_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/commen_With_Height10"
+            android:src="@mipmap/ic_arrow_left"
+            />
+
+        <TextView
+            android:id="@+id/commen_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我是标题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/commen_textSize20"/>
+
+
+        <TextView
+            android:id="@+id/commen_bar_tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_padding"
+            android:padding="@dimen/commen_With_Height5"
+            android:text="我是最右边的文字"
+            android:textColor="@color/white"
+            android:textSize="@dimen/commen_textSize12"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</layout>

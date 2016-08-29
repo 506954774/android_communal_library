@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/commen_With_Height100"
+    android:layout_marginTop="@dimen/commen_With_Height5"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/commen_With_Height10" >
+
+        <TextView
+            android:id="@+id/item_work_manager_workname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="际华3502御园经济适用房项目施工"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/commen_textSize14" />
+
+        <TextView
+            android:id="@+id/item_work_manager_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_work_manager_workname"
+            android:layout_marginTop="@dimen/commen_With_Height5"
+            android:text="承建单位："
+            android:textSize="@dimen/commen_textSize10" />
+
+        <TextView
+            android:id="@+id/item_work_manager_companyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_work_manager_workname"
+            android:layout_marginTop="@dimen/commen_With_Height5"
+            android:layout_toRightOf="@id/item_work_manager_tv1"
+            android:text="河北双维集团有限公司"
+            android:textSize="@dimen/commen_textSize10" />
+
+        <TextView
+            android:id="@+id/item_work_manager_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_work_manager_tv1"
+            android:layout_marginTop="@dimen/commen_With_Height5"
+            android:text="项目经理："
+            android:textSize="@dimen/commen_textSize10" />
+
+        <TextView
+            android:id="@+id/item_work_manager_directorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_work_manager_tv1"
+            android:layout_marginTop="@dimen/commen_With_Height5"
+            android:layout_toRightOf="@id/item_work_manager_tv2"
+            android:text="郑克飞"
+            android:textSize="@dimen/commen_textSize10" />
+
+        <TextView
+            android:id="@+id/item_work_manager_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_work_manager_tv2"
+            android:layout_marginTop="@dimen/commen_With_Height5"
+            android:text="起止时间："
+            android:textSize="@dimen/commen_textSize10" />
+
+        <TextView
+            android:id="@+id/item_work_manager_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_work_manager_tv2"
+            android:layout_marginTop="@dimen/commen_With_Height5"
+            android:layout_toRightOf="@id/item_work_manager_tv3"
+            android:text="2016.04.05-2017.06"
+            android:textSize="@dimen/commen_textSize10" />
+
+        <TextView
+            android:id="@+id/item_work_manager_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_work_manager_tv2"
+            android:layout_marginLeft="@dimen/commen_With_Height10"
+            android:layout_marginTop="@dimen/commen_With_Height5"
+            android:layout_toRightOf="@id/item_work_manager_time"
+            android:text="总工期："
+            android:textSize="@dimen/commen_textSize10" />
+
+        <TextView
+            android:id="@+id/item_work_manager_spendtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_work_manager_tv2"
+            android:layout_marginTop="@dimen/commen_With_Height5"
+            android:layout_toRightOf="@id/item_work_manager_tv4"
+            android:text="900天"
+            android:textSize="@dimen/commen_textSize10" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/commen_With_Height10"
+        android:layout_marginTop="@dimen/commen_With_Height2"
+        android:src="@mipmap/ic_manager_item_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/item_work_manager_time_havespend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="42"
+                android:textColor="@color/item_have_spend_time"
+                android:textSize="@dimen/commen_textSize16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天"
+                android:textSize="@dimen/commen_textSize10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_work_manager_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="已经进行"
+            android:textSize="@dimen/commen_textSize10" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

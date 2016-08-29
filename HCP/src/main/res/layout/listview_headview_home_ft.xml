@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#c4c4c4"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--广告位-->
+    <com.qdong.communal.library.widget.AdBannerView.AdBannerView
+        android:id="@+id/ad_list"
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+
+        ></com.qdong.communal.library.widget.AdBannerView.AdBannerView>
+
+    <!--模块位-->
+    <com.qdong.hcp.customWidget.MyGridView
+
+        android:scrollbars="none"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:background="#ffffff"
+        android:id="@+id/gv_moudle"
+        android:numColumns="5"
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+
+
+    </com.qdong.hcp.customWidget.MyGridView>
+
+    <!--地图位-->
+    <TextView
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/text_size16"
+        android:textColor="@color/appTheme"
+        android:padding="8dp"
+        android:text="@string/job_recomend"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"/>
+
+    <!--<com.baidu.mapapi.map.MapView
+        android:id="@+id/map"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:clickable="true" />-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="center"
+        android:src="@mipmap/icon_map_bg"
+        android:layout_height="150dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!--选择器-->
+    <com.qdong.communal.library.widget.PopSelectView.PopSelectionView
+        android:id="@+id/pop_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.qdong.communal.library.widget.PopSelectView.PopSelectionView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

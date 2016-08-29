@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/create_change_namager_title"
+            layout="@layout/commen_titile_bar"></include>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/default_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/commen_With_Height5"
+                android:layout_marginLeft="@dimen/commen_With_Height10"
+                android:layout_marginTop="@dimen/commen_With_Height10"
+                android:text="@string/createNewAccount"
+                />
+
+            <EditText
+                android:id="@+id/create_change_namager_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/commen_With_Height10"
+                android:layout_marginRight="@dimen/commen_With_Height10"
+                android:background="@drawable/white_rectangle"
+                android:hint="请输入账号"
+                android:padding="@dimen/commen_With_Height5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/default_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/commen_With_Height5"
+                android:layout_marginLeft="@dimen/commen_With_Height10"
+                android:layout_marginTop="@dimen/commen_With_Height20"
+                android:text="@string/createNewPassword"
+                />
+
+            <EditText
+                android:id="@+id/create_change_namager_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/commen_With_Height10"
+                android:layout_marginRight="@dimen/commen_With_Height10"
+                android:background="@drawable/white_rectangle"
+                android:hint="请输入密码"
+                android:padding="@dimen/commen_With_Height5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/default_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/commen_With_Height5"
+                android:layout_marginLeft="@dimen/commen_With_Height10"
+                android:layout_marginTop="@dimen/commen_With_Height20"
+                android:text="@string/createNewName"
+                />
+
+            <EditText
+                android:id="@+id/create_change_namager_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/commen_With_Height10"
+                android:layout_marginRight="@dimen/commen_With_Height10"
+                android:background="@drawable/white_rectangle"
+                android:hint="请输入姓名"
+                android:padding="@dimen/commen_With_Height5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/default_textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/commen_With_Height5"
+                android:layout_marginLeft="@dimen/commen_With_Height10"
+                android:layout_marginTop="@dimen/commen_With_Height20"
+                android:text="@string/createNewPhone"
+                />
+
+            <EditText
+                android:id="@+id/create_change_namager_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/commen_With_Height10"
+                android:layout_marginRight="@dimen/commen_With_Height10"
+                android:background="@drawable/white_rectangle"
+                android:hint="请输入电话号码"
+                android:padding="@dimen/commen_With_Height5"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/create_change_namager_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commen_With_Height20"
+            android:layout_marginRight="@dimen/commen_With_Height20"
+            android:layout_marginTop="@dimen/commen_With_Height30"
+            android:background="@color/default_titleBgColor"
+            android:gravity="center"
+            android:paddingBottom="@dimen/commen_With_Height10"
+            android:paddingTop="@dimen/commen_With_Height10"
+            android:text="@string/createNow"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textSize"
+            />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/item_employe_workernum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/commen_With_Height20"
+            android:text="5"
+            android:textColor="@color/default_textColor"
+            android:textSize="@dimen/default_textSize"
+            />
+
+        <TextView
+            android:id="@+id/item_employe_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/commen_With_Height20"
+            android:layout_toLeftOf="@id/item_employe_workernum"
+            android:background="@drawable/white_grrenline_rectangle_radiu"
+            android:padding="2dp"
+            android:text="进行中"
+            android:textColor="#92C425"
+            android:textSize="@dimen/commen_textSize14"
+            />
+
+        <TextView
+            android:id="@+id/item_employe_project"
+            style="@style/default_textStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/commen_With_Height10"
+            android:layout_toLeftOf="@id/item_employe_status"
+            android:padding="@dimen/commen_With_Height20"
+            android:text="我是一个工程项目名"
+            />
+
+    </RelativeLayout>
+</layout>

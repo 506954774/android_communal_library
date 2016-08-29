@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/app_bg_horizonal">
+    <ImageView
+        android:id="@+id/iv_fragment_my_back"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:src="@mipmap/icon_arrow_left"/>
+
+    <TextView
+        android:id="@+id/tv_fragment_my_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="#262626"
+        android:textSize="18sp"
+        android:text="HALO  CITY"/>
+
+</RelativeLayout>

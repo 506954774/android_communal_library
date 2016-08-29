@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:gravity="center_vertical"
+
+     >
+    
+ 
+    <TextView 
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评分:"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ff666666"
+        android:layout_marginRight="10dp"
+        />
+    
+      <RatingBar
+                        android:id="@+id/ratingBar_rating_average"
+                        style="@style/RatingBarBig"
+                   
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                      android:layout_toRightOf="@+id/tv_item_name"
+
+                      android:clickable="true"
+                      
+                     
+                       
+                    
+                      
+                        android:rating="1" 
+                        />
+ 
+
+</RelativeLayout>

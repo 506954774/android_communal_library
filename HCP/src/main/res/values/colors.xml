@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--通用色值-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorTheme">#ff568edd</color>
+    <color name="appTheme">#ff568edd</color>
+    <color name="text_color_title">#ff666666</color>
+    <color name="text_color_normal">#ff888888</color>
+
+    <!--首页-->
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorThemeLight">#FFFAA90A</color>
+    <color name="color_devide">#dadada</color>
+    <color name="textBlack">#ff888888</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="blue">#378DDA</color>
+    <color name="default_titleTextColor">#FFFFFF</color>
+    <color name="default_titleBgColor">#378DDA</color>
+    <color name="default_textColor">#000000</color>
+    <color name="default_llBgColor">#F1F1F1</color>
+    <color name="item_have_spend_time">#FEA02E</color>
+    <color name="item_text_content">#B4B4B4</color>
+    <!--团队管理-->
+    <color name="edit_color">#FE8820</color>
+</resources>

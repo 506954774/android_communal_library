@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_llBgColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/default_titleStyle"
+        android:gravity="center"
+        android:text="@string/createNewProject" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="@dimen/default_padding"
+                android:paddingTop="@dimen/default_padding" >
+
+                <!-- 项目名称 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newPorjectName" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rectangle"
+                        android:hint="际华3502御园经济适用房项目施工"
+                        android:padding="@dimen/commen_With_Height5"
+                        android:textSize="@dimen/commen_textSize12" >
+                    </EditText>
+                </LinearLayout>
+
+                <!-- 链接地址 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newPorjectUrlAddress" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rectangle"
+                        android:hint="http://www.baidu.com"
+                        android:padding="@dimen/commen_With_Height5"
+                        android:textSize="@dimen/commen_textSize12" />
+                </LinearLayout>
+
+                <!-- 项目地址 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newProjectAddress" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rectangle"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="石家庄东东东东东东东东"
+                            android:padding="@dimen/commen_With_Height5"
+                            android:textSize="@dimen/commen_textSize12" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/commen_With_Height5"
+                            android:scaleType="center"
+                            android:src="@mipmap/ic_location" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 项目简介 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_padding"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:text="@string/newPorjectIntroduce" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rectangle"
+                        android:hint="总建筑平米数33249㎡,1#-3#楼地下车库，地下设备备用房"
+                        android:padding="@dimen/commen_With_Height5"
+                        android:textSize="@dimen/commen_textSize12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/commen_With_Height2"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="@dimen/default_padding"
+                android:paddingTop="@dimen/default_padding" >
+
+                <!-- 承建单位 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newPorjectContractor" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rectangle"
+                        android:hint="河北双维集团有限公司	"
+                        android:padding="@dimen/commen_With_Height5"
+                        android:textSize="@dimen/commen_textSize12" >
+                    </EditText>
+                </LinearLayout>
+
+                <!-- 项目经理 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newPorjectProjectManager" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rectangle"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:padding="@dimen/commen_With_Height5"
+                            android:text="郑克飞"
+                            android:textSize="@dimen/commen_textSize12" />
+
+                        <ImageView
+                            android:layout_width="@dimen/commen_With_Height10"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/commen_With_Height5"
+                            android:scaleType="center"
+                            android:src="@mipmap/ic_arrow_down" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 起止时间 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newPorjectSAndETime" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rectangle"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:padding="@dimen/commen_With_Height5"
+                            android:text="2015-12-01"
+                            android:textSize="@dimen/commen_textSize12" />
+
+                        <ImageView
+                            android:layout_width="@dimen/commen_With_Height10"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/commen_With_Height5"
+                            android:src="@mipmap/ic_calendar" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 起止时间 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newPorjectSAndETime"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_padding"
+                        android:background="@drawable/white_rectangle"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:padding="@dimen/commen_With_Height5"
+                            android:text="2018-06-01"
+                            android:textSize="@dimen/commen_textSize12" />
+
+                        <ImageView
+                            android:layout_width="@dimen/commen_With_Height10"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/commen_With_Height5"
+                            android:src="@mipmap/ic_calendar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/commen_With_Height2"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="@dimen/default_padding"
+                android:paddingTop="@dimen/default_padding" >
+
+                <!-- 劳务公司 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newPorjectServiceCompany" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rectangle"
+                        android:hint="河北双维集团有限公司	"
+                        android:padding="@dimen/commen_With_Height5"
+                        android:textSize="@dimen/commen_textSize12" >
+                    </EditText>
+                </LinearLayout>
+
+                <!-- 项目经理 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newPorjectProjectManager" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rectangle"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:padding="@dimen/commen_With_Height5"
+                            android:text="郑克飞"
+                            android:textSize="@dimen/commen_textSize12" />
+
+                        <ImageView
+                            android:layout_width="@dimen/commen_With_Height10"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/commen_With_Height5"
+                            android:scaleType="center"
+                            android:src="@mipmap/ic_arrow_down" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 起止时间 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newPorjectSAndETime" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rectangle"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:padding="@dimen/commen_With_Height5"
+                            android:text="2015-12-01"
+                            android:textSize="@dimen/commen_textSize12" />
+
+                        <ImageView
+                            android:layout_width="@dimen/commen_With_Height10"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/commen_With_Height5"
+                            android:src="@mipmap/ic_calendar" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 起止时间 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/commen_With_Height5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/newPorjectSAndETime"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_padding"
+                        android:background="@drawable/white_rectangle"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:padding="@dimen/commen_With_Height5"
+                            android:text="2018-06-01"
+                            android:textSize="@dimen/commen_textSize12" />
+
+                        <ImageView
+                            android:layout_width="@dimen/commen_With_Height10"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/commen_With_Height5"
+                            android:src="@mipmap/ic_calendar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_topBarHeight"
+                android:layout_marginBottom="@dimen/commen_With_Height20"
+                android:layout_marginLeft="@dimen/default_padding"
+                android:layout_marginRight="@dimen/default_padding"
+                android:layout_marginTop="@dimen/commen_With_Height20"
+                android:background="@drawable/bule_rectangle_radiu"
+                android:gravity="center"
+                android:text="@string/default_commit"
+                android:textColor="@color/default_titleTextColor"
+                android:textSize="@dimen/default_titleSize" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

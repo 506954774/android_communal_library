@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/commen_With_Height40" >
+
+    <TextView
+        android:id="@+id/contactc_group_role_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="@dimen/commen_With_Height5"
+        android:paddingTop="@dimen/commen_With_Height5"
+        android:text="@string/company" />
+
+    <TextView
+        android:id="@+id/contactc_group_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/default_padding"
+        android:paddingBottom="@dimen/commen_With_Height5"
+        android:paddingTop="@dimen/commen_With_Height5"
+        android:text="6" />
+
+</RelativeLayout>
